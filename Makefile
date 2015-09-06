@@ -17,6 +17,7 @@ clean:
 
 luamongo: $(OBJS)
 	$(CC) $(CFLAGS) $(OBJS) -o $(OUTLIB) $(LDFLAGS)
+	strip mongo.so
 
 echo:
 	@echo "CC = $(CC)"
