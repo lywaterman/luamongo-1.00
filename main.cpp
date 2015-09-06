@@ -54,6 +54,7 @@ extern int mongo_gridfschunk_register(lua_State *L);
 extern "C" {
 
 LM_EXPORT int luaopen_mongo(lua_State *L) {
+    mongo::client::initialize();
     mongo_bsontypes_register(L);
     mongo_connection_register(L);
     mongo_replicaset_register(L);
