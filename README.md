@@ -1,6 +1,6 @@
 # A Lua driver for mongodb
 
-this lua driver is working on legacy 1.00+, for older dirver use luamongo
+this lua driver is working on legacy 1.00 and 1.00+, for older dirver use luamongo
 
 ## Wiki Documentation
 
