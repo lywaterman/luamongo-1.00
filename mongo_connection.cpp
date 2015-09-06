@@ -104,11 +104,6 @@ static int connection_tostring(lua_State *L) {
 
 
 int mongo_connection_register(lua_State *L) {
-    mongo::client::GlobalInstance instance;
-    if (!instance.initialized()) {                                                              std::cout << "failed to initialize the client driver: " << instance.status() << std::endl;
-        return EXIT_FAILURE;
-    }
-
     static const luaL_Reg connection_methods[] = {
         {"connect", connection_connect},
         {NULL, NULL}
